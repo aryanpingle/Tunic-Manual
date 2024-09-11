@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TUNIC | Instruction Manual</title>
+
+        <!-- Pre-connect to the pages site -->
+        <link rel="preconnect" href="https://raw.githubusercontent.com">
+
+        <!-- Favicon -->
+        <link href="./images/icons/favicon-64.png" rel="shortcut icon" type="image/png" sizes="64x64">
+
+        <!-- Open Graph Tags -->
+        <meta name="author" content="Aryan Pingle" />
+        <meta name="description" content="Read TUNIC's Instruction Manual (original and translated) in your browser" />
+        <meta property="og:title" content="TUNIC | Instruction Manual" />
+        <meta property="og:url" content="https://aryanpingle.github.io/Tunic-Manual/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Read TUNIC's Instruction Manual (original and translated) in your browser" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/aryanpingle/Tunic-Manual/master/images/icons/favicon-512.png" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@aryan_pingle">
+        <meta name="twitter:creator" content="@aryan_pingle">
+        <meta name="twitter:title" content="TUNIC | Instruction Manual">
+        <meta name="twitter:description" content="Read TUNIC's instruction manual (original and translated) in your browser">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/aryanpingle/Tunic-Manual/master/images/icons/cover-920x460.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css" />
+
+        <!-- JS -->
+        <script src="index.js" async defer></script>
+    </head>
+    <body>
+        <div id="page">
+            <div class="menu-bar">
+                <div class="translation-options">
+                    <button
+                        onclick="setLanguage(this.value)"
+                        value="original"
+                        title="View manual in Runic"
+                    >
+                        Original
+                    </button>
+                    <button
+                        onclick="setLanguage(this.value)"
+                        value="translated-raw"
+                        title="View manual with each word's translation"
+                    >
+                        Translated (In-Place)
+                    </button>
+                    <button
+                        onclick="setLanguage(this.value)"
+                        value="translated-clean"
+                        title="View manual in English"
+                    >
+                        Translated (Clean)
+                    </button>
+                </div>
+                <div class="quality-options">
+                    <button
+                        onclick="setQuality(this.value)"
+                        value="low-quality"
+                    >
+                        Standard Quality
+                    </button>
+                    <button
+                        onclick="setQuality(this.value)"
+                        value="high-quality"
+                    >
+                        High Quality
+                    </button>
+                </div>
+            </div>
+            <main>
+                <div class="navigation-bar navigation-bar--left"></div>
+                <div class="navigation-bar navigation-bar--right"></div>
+                <div class="manual-page"></div>
+            </main>
+            <div class="footer">
+                Original and translated pages by
+                <a href="https://book.tunic.wiki" target="_blank"
+                    >book.tunic.wiki</a
+                >
+                ⭐ Website by
+                <a href="https://github.com/aryanpingle">Aryan Pingle</a>
+            </div>
+        </div>
+    </body>
+</html>

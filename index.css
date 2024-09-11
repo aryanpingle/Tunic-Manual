@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "PT Serif", serif;
+    color: whitesmoke;
+
+    --tunic-gold: #E1A62C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    height: 100%;
+    height: -webkit-fill-available;
+}
+
+#page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar {
+    flex: 0 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0.5em;
+}
+
+button {
+    font: inherit;
+    padding: 0.5em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    background-color: #d2dceb;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:active, button:focus {
+    outline: 2px solid var(--tunic-gold);
+}
+
+main {
+    flex: 1 0 0;
+    position: relative;
+}
+
+.navigation-bar {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navigation-bar--left {
+    left: 0;
+}
+
+.navigation-bar--right {
+    right: 0;
+}
+
+.manual-page {
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer {
+    padding: 0.5em;
+    text-align: center;
+    text-wrap: balance;
+    flex: 0 0 auto;
+}
+
+.footer > a {
+    color: #E1A62C !important;
+}
