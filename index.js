@@ -13,7 +13,9 @@ function setQuality(value) {
 }
 
 function preloadImage(url) {
-    return fetch(url);
+    return fetch(url, {
+        mode: 'no-cors'
+    });
 }
 
 function setup() {

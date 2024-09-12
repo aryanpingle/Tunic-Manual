@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TUNIC | Instruction Manual</title>
 
+        <!-- Service Worker -->
+        <script>
+            if("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("./service-worker.js")
+            }
+        </script>
+
         <!-- Pre-connect to the pages site -->
         <link rel="preconnect" href="https://raw.githubusercontent.com">
 
